@@ -826,6 +826,7 @@ footer {
         font-weight: 500;
         margin: 0 0 15px 0;
         color: $heading;
+        margin-block-end: 0;
     }
 
     h4 {
@@ -843,6 +844,10 @@ footer {
 
     ul {
         padding: 0 0 0 15px;
+    }
+
+    a {
+        color: $base-color
     }
 }
 
