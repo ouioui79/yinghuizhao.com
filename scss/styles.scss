@@ -34,7 +34,7 @@
 */
 
 // Define base and accent colors
-$base-color: #3498db;
+$base-color: #ff94be;
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
@@ -327,7 +327,7 @@ footer {
         content: '';
         top: 100%;
         height: 1px;
-        width: 50px;
+        width: 70px;
         left: 0;
         right: 0;
         margin: 0 auto;
@@ -350,8 +350,9 @@ footer {
     height: 100vh;
     min-height: 500px;
     max-height: 1080px;
-    background: url(../images/lead-bg.jpg);
-    background-size: cover;
+    background: url(../images/bg.jpg);
+    background-position: center center;
+    background-size: contain;
     padding: 15px;
     overflow: hidden;
 }
@@ -479,6 +480,12 @@ footer {
     margin: 30px auto 0 auto;
     position: relative;
     max-width: 1000px;
+
+    ul {
+        color: $text;
+        margin: 0;
+        padding: 0 0 0 15px;
+    }
 
     &:before {
         position: absolute;
@@ -652,6 +659,10 @@ footer {
 
 .project-image {
     float: left;
+    width: 300px;
+    height: 300px;
+    background-position: center center !important;
+    background-size: cover !important;
 }
 
 .project-info {
@@ -673,9 +684,17 @@ footer {
         margin: 0 0 15px 0;
         font-size: 0.9em;
     }
+
+    a {
+        color: $base-color;
+    }
 }
 
 .no-image {
+    .project-image {
+        display: none;
+    }
+
     .project-info {
         position: relative;
         margin: 0;
@@ -815,6 +834,7 @@ footer {
         font-weight: 500;
         margin: 0 0 15px 0;
         color: $heading;
+        margin-block-end: 0;
     }
 
     h4 {
@@ -832,6 +852,10 @@ footer {
 
     ul {
         padding: 0 0 0 15px;
+    }
+
+    a {
+        color: $base-color
     }
 }
 
@@ -959,7 +983,8 @@ footer {
     }
 
     .project-image {
-        display: none;
+        float: none;
+        width: 100%;
     }
 
     .project-info {
